@@ -1,3 +1,3 @@
 # J
 
-A simple J interpreter
+A very simple J interpreter
