@@ -10,6 +10,7 @@ typealias LexError = Exception
 
 fun lex(s: String): Result<List<Token>> {
     val result = arrayListOf<Token>()
+
     var idx = 0
     while (idx < s.length) {
         result.add(

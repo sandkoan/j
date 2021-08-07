@@ -38,7 +38,7 @@ data class Array(val depth: List<Long>, val data: List<Element>) {
     }
 }
 
-fun tr(d: List<Long>): Long = d.reduce { acc, l -> acc * l }
+fun tr(d: List<Long>): Long = d.reduceOrNull { acc, l -> acc * l } ?: 1
 
 fun boxed(a: Array): Boolean = a.data.any {
     when (it) {
