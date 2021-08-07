@@ -32,7 +32,7 @@ data class Array(val depth: List<Long>, val data: List<Element>) {
                 is Element.Number -> sb.append("${e1.n} ")
             }
         }
-        sb.append("\n")
+//        sb.append("\n")
 
         return sb.toString()
     }
